@@ -51,4 +51,3 @@ JPA Entity 에서 기본 키 생성을 자동으로 해주기 위해서 사용�
 | allocationSize    | 생성기에서 ID 번호를 할당할 때 증가하는 양 | 50  |
 | uniqueConstraints | 유니크 제약 조건                 |     |
 | indexes           | 테이블에 추가될 인덱스              |     |
-
