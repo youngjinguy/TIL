@@ -5,7 +5,9 @@ Open Session In View를 그대로 번역하자면, Session을 View까지 연다�
 
 ## Session이 뭐지?
 Session이라는 단어를 사용해서 우리가 흔히 웹에서 사용하는 Session이라고 오해할 수 있지만 여기서의 Session은 Hibernate의 Session(JPA EntityManager 구현체) 이다.
- 그러므로 Open Session 이라는 것은 Session(EntityManager)을 연다/생성한다의 의미이다.
+
+그러므로 Open Session 이라는 것은 Session(EntityManager)을 연다/생성한다의 의미이다.
+
 Session이 생성된다는 것은 Persistence Context(이하 영속성 컨텍스트)가 시작된다는 것을 의미하기도 한다.
 
 ## 그래서 OSIV는 뭘까?
@@ -13,7 +15,9 @@ Session이 생성된다는 것은 Persistence Context(이하 영속성 컨텍스
 
 ## 왜 View까지 열어둘까?
 우리가 보통 웹 개발 시 서비스로직에 트랜잭션이 필요하다는 의미로 @Transactional 어노테이션을 많이 사용한다.
+
 트랜잭션 시작 시 영속성 컨텍스트는 생성되고, 종료 시 영속성 컨텍스트는 소멸된다.
+
 이 때 만약 View에서 일반적인 데이터 조회는 가능하겠지만, 지연로딩을 할 경우 영속성 컨텍스트 밖에서 이뤄지므로 `LazyInitializationException` 이 발생한다.
 
 ## 어떻게 사용하지?

@@ -1,6 +1,7 @@
-# @GeneratedValue
+# @GeneratedValue(작성중)
 
 JPA Entity 에서 기본 키 생성을 자동으로 해주기 위해서 사용하는 어노테이션이다.
+
 생성 전략은 총 5가지가 있다.
 
 # AUTO
