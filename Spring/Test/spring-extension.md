@@ -12,3 +12,11 @@ public class SpringExtension implements BeforeAllCallback, AfterAllCallback, Tes
     ...생략
 }
 ```
+
+SpringExtension 클래스를 JUnit에서 사용하기 위해서는 JUnit의 `@ExtendWith` 어노테이션을 이용하면 된다.
+
+```kotlin
+@ExtendWith(SpringExtension::class)
+```
+
+## 특징
